@@ -16,6 +16,8 @@ public class Vetor{
 
 	public boolean adiciona(String elemento){
 		
+		this.aumentaCapacidade();
+		
 		if(this.tamanho < this.elementos.length){
 			this.elementos[this.tamanho] = elemento;
 			this.tamanho++;
@@ -24,12 +26,54 @@ public class Vetor{
 		return false;
 	}
 	
+	public boolean adiciona(int posicao, String elemento){
+		
+		this.aumentaCapacidade();
+		
+		if(!(posicao >= 0 && posicao < tamanho)){
+			
+			throw new IllegalArgumentException("Posicao Invalida");
+		}
+				
+//mover todos os elementos
+		for(int i=this.tamanho-1; i>=posicao; i--){
+			
+			this.elementos[i+1] = this.elementos[i];
+		}
+		this.elementos[posicao] = elemento;
+		this.tamanho++;
+		
+		return true;
+	}
+	
+	private void aumentaCapacidade(){
+		
+		if(this.tamanho == this.elementos.length){
+			String[] elementosNovos = new String[this.elementos.length*2];
+			for(int i=0; i<this.elementos.length; i++){
+				elementosNovos[i] = this.elementos[i];
+			}
+			this.elementos = elementosNovos;
+		}
+	}
+	
 	public String busca(int posicao){
 //com a negação do if abaixo, obtemos todo o tamanho do vetor que não possuí elementos em suas posições, ou seja a posição de todas as posições que não podem ser acessadas.
 		if(!(posicao >= 0 && posicao < tamanho)){
 			throw new IllegalArgumentException("Posicao Invalida");
 		}
 		return this.elementos[posicao];
+	}
+	
+	public int busca(String elemento){
+
+		for(int i=0; i <this.tamanho; i++){
+//			if(this.elementos[i].equalsIgnoreCase(elemento)){
+			if(this.elementos[i].equals(elemento)){
+				return i;
+			}
+		}
+		return -1;
 	}
 	
 	public int tamanho(){
@@ -84,7 +128,7 @@ public class Vetor{
 	}
 	*/
 //Aula 4	
-	/*	
+	/*
 	public String toString(){
 		
 		String s = "[";
@@ -100,8 +144,8 @@ public class Vetor{
 		
 		s += "] ";
 		
-		return s;
-		//return Arrays.toString(elementos);
+		//return s;
+		return Arrays.toString(elementos);
 	}
-	*/	
+	*/
 }
