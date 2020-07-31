@@ -1,7 +1,7 @@
 //AULA 08: VETORES E ARRAYS: AUMENTAR CAPACIDADE DO VETOR
-package scr.aula8;
+package src.aula8;
 
-import scr.vetor.Vetor;
+import src.vetor.Vetor;
 
 public class Aula8{
 	

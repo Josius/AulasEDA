@@ -1,7 +1,7 @@
 //AULA 07: VETORES E ARRAYS: ADD ELEMENTO EM QUALQUER POSIÇÃO
-package scr.aula7;
+package src.aula7;
 
-import scr.vetor.Vetor;
+import src.vetor.Vetor;
 
 public class Aula7{
 	

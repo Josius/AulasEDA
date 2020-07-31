@@ -1,7 +1,7 @@
 //AULA 2 - VETORES E ARRAYS INTRODUÇÃO
-package scr.aula2;
+package src.aula2;
 
-import scr.vetor.Vetor;
+import src.vetor.Vetor;
 
 public class Aula2{
 	

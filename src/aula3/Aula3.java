@@ -1,7 +1,7 @@
 //AULA 3 - VETORES E ARRAYS: ADICIONAR ELEMENTO NO FINAL DO VETOR
-package scr.aula3;
+package src.aula3;
 
-import scr.vetor.Vetor;
+import src.vetor.Vetor;
 
 public class Aula3{
 	

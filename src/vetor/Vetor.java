@@ -1,4 +1,4 @@
-package scr.vetor;
+package src.vetor;
 
 import java.util.Arrays;
 import java.lang.StringBuilder;
@@ -30,10 +30,7 @@ public class Vetor{
 		
 		this.aumentaCapacidade();
 		
-		if(!(posicao >= 0 && posicao < tamanho)){
-			
-			throw new IllegalArgumentException("Posicao Invalida");
-		}
+		verifica(posicao);
 				
 //mover todos os elementos
 		for(int i=this.tamanho-1; i>=posicao; i--){
@@ -58,10 +55,8 @@ public class Vetor{
 	}
 	
 	public String busca(int posicao){
-//com a negação do if abaixo, obtemos todo o tamanho do vetor que não possuí elementos em suas posições, ou seja a posição de todas as posições que não podem ser acessadas.
-		if(!(posicao >= 0 && posicao < tamanho)){
-			throw new IllegalArgumentException("Posicao Invalida");
-		}
+		
+		verifica(posicao);
 		return this.elementos[posicao];
 	}
 	
@@ -75,12 +70,44 @@ public class Vetor{
 		}
 		return -1;
 	}
+
+	public void remove(int posicao){
+		
+		verifica(posicao);
+		for(int i=posicao; i<this.tamanho-1; i++){
+			
+			this.elementos[i] = this.elementos[i+1];
+		}
+		tamanho--;
+	}
+	
+	public void remove(String elemento){
+		
+		int busca = busca(elemento);
+		if(busca>=0){
+			for(int i=busca; i<this.tamanho-1; i++){
+			
+				this.elementos[i] = this.elementos[i+1];
+			}
+			tamanho--;
+			System.out.println("Removido o elemento " + elemento);
+		}else{
+			System.out.println("Elemento " + elemento + " nao existe no vetor");
+		}
+	}
 	
 	public int tamanho(){
 		
 		return this.tamanho;
 	}
 	
+	private void verifica(int posicao){
+//com a negação do if abaixo, obtemos todo o tamanho do vetor que não possuí elementos em suas posições, ou seja a posição de todas as posições que não podem ser acessadas.		
+		if(!(posicao >= 0 && posicao < tamanho)){
+			throw new IllegalArgumentException("Posicao Invalida");
+		}
+	}
+
 //O codigo abaixo faz o mesmo que o 'Aula4', porem mais elegante	
 	public String toString(){
 				

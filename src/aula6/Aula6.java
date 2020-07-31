@@ -1,7 +1,7 @@
 //AULA 06: VETORES E ARRAYS: VERIFICAR SE ELEMENTO EXISTE
-package scr.aula6;
+package src.aula6;
 
-import scr.vetor.Vetor;
+import src.vetor.Vetor;
 
 public class Aula6{
 	

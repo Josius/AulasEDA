@@ -1,7 +1,7 @@
 //AULA 05: VETORES E ARRAYS: OBTER ELEMENTO DE UMA POSIÇÃO
-package scr.aula5;
+package src.aula5;
 
-import scr.vetor.Vetor;
+import src.vetor.Vetor;
 
 public class Aula5{
 	

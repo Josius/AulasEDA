@@ -1,7 +1,7 @@
 //AULA 04: VETORES E ARRAYS: TAMANHO E IMPRIMIR ELEMENTOS
-package scr.aula4;
+package src.aula4;
 
-import scr.vetor.Vetor;
+import src.vetor.Vetor;
 
 public class Aula4{
 	
