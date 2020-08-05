@@ -77,7 +77,7 @@ public class Lista<T>{
 		}
 		return -1;
 	}
-
+		
 	public void remove(int posicao){
 		
 		verifica(posicao);
@@ -133,6 +133,46 @@ public class Lista<T>{
 		
 		return s.toString();
 	}
+	
+	//EXERCICIOS
+	//01 com problema, se modificar a busca(T elemento), tambem precisa modificar aqui
+	/*
+	public boolean contem(T elemento){
+		
+		for(int i=0; i<this.tamanho; i++){
+			if(this.elementos[i].equals(elemento)){
+				return true;
+			}
+		}
+		return false;
+	}
+	*/
+	//01 correto
+	public boolean contem(T elemento){
+		
+		int pos = busca(elemento);
+		if(pos > -1){
+			return true;
+		}
+		return false;
+		
+		//o cód. de cima tem a mesma função que o de baixo
+		
+		//return busca(elemento) > -1; //ou >= 0
+	}
+	
+	//02
+	public int ultimoIndice(T elemento){
+		
+		for(int i=this.tamanho-1; i>=0; i--){
+			if(this.elementos[i].equals(elemento)){
+				return i;
+			}
+		}
+		return -1;
+	}
 }
 
 //1 - Instanciar um construtor genérico não é permitido no java; há duas opções para contornar esse erro.
+
+
