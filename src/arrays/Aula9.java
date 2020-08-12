@@ -1,13 +1,13 @@
-//AULA 07: VETORES E ARRAYS: ADD ELEMENTO EM QUALQUER POSIÇÃO
-package src.aula7;
+//AULA 09: VETORES E ARRAYS: REMOVER ELEMENTO
+package src.arrays;
 
 import src.vetor.Vetor;
 
-public class Aula7{
+public class Aula9{
 	
 	public static void main(String[] args){
 		
-		Vetor vetor = new Vetor(10);
+		Vetor vetor = new Vetor(3);
 		
 		vetor.adiciona("B");
 		vetor.adiciona("C");
@@ -16,12 +16,12 @@ public class Aula7{
 		vetor.adiciona("G");
 		
 		System.out.println(vetor);
-		
-		vetor.adiciona(0, "A");
+
+		vetor.remove("B");
 		
 		System.out.println(vetor);
 		
-		vetor.adiciona(3, "D");
+		vetor.remove("A");
 		
 		System.out.println(vetor);
 	}

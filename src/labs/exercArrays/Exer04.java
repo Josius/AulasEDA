@@ -2,7 +2,7 @@ package src.labs.exercArrays;
 
 import src.vetor.Lista;
 
-public class Exer01{
+public class Exer04{
 	
 	public static void main(String[] args){
 		
@@ -11,9 +11,11 @@ public class Exer01{
 		lista.adiciona("ACTIVE");
 		lista.adiciona("BAD_CONTEXT");
 		lista.adiciona("C14NMethodParameterSpec");
+		lista.adiciona("DATA_CONVERSION");
+		lista.adiciona("ECField");
 		
-		System.out.println(lista.contem("ACTIVE"));
-		System.out.println(lista.contem("BAD_CONTEXT"));
-		System.out.println(lista.contem("ECField"));
+		System.out.println(lista.obtem(0));
+		System.out.println(lista.obtem(2));
+		System.out.println(lista.obtem(4));
 	}
 }

@@ -1,5 +1,5 @@
 //AULA 08: VETORES E ARRAYS: AUMENTAR CAPACIDADE DO VETOR
-package src.aula8;
+package src.arrays;
 
 import src.vetor.Vetor;
 

@@ -1,5 +1,5 @@
 //AULA 3 - VETORES E ARRAYS: ADICIONAR ELEMENTO NO FINAL DO VETOR
-package src.aula3;
+package src.arrays;
 
 import src.vetor.Vetor;
 

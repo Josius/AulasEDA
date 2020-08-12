@@ -1,5 +1,5 @@
 //AULA 2 - VETORES E ARRAYS INTRODUÇÃO
-package src.aula2;
+package src.arrays;
 
 import src.vetor.Vetor;
 

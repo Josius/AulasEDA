@@ -1,5 +1,5 @@
 //AULA 06: VETORES E ARRAYS: VERIFICAR SE ELEMENTO EXISTE
-package src.aula6;
+package src.arrays;
 
 import src.vetor.Vetor;
 

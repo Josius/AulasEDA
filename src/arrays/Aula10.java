@@ -1,6 +1,5 @@
 //AULA 10: VETORES E ARRAYS: GENERALIZAR O TIPO DO VETOR
-
-package src.aula10;
+package src.arrays;
 
 import src.vetor.VetorObjetos;
 import src.vetor.Contato;

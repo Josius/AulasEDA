@@ -1,5 +1,5 @@
 //AULA 05: VETORES E ARRAYS: OBTER ELEMENTO DE UMA POSIÇÃO
-package src.aula5;
+package src.arrays;
 
 import src.vetor.Vetor;
 

@@ -61,7 +61,7 @@ public class Lista<T>{
 		}
 	}
 	
-	public Object busca(int posicao){
+	public T busca(int posicao){
 		
 		verifica(posicao);
 		return this.elementos[posicao];
@@ -85,7 +85,7 @@ public class Lista<T>{
 			
 			this.elementos[i] = this.elementos[i+1];
 		}
-		tamanho--;
+		this.tamanho--;
 	}
 	
 	public void remove(T elemento){
@@ -171,6 +171,39 @@ public class Lista<T>{
 		}
 		return -1;
 	}
+	
+	//03 - PRECISEI MUDAR O NOME DESTA FUNÇÃO POR CAUSA DA FUNÇÃO DA LINHA 91
+	public void remove3(T elemento){
+		
+		int pos =  this.busca(elemento);
+		if(pos > -1){
+			this.remove(pos);
+		}
+	}
+	
+	//04
+	public T obtem(int posicao){
+		return this.busca(posicao);	
+	}
+	
+	//05
+	public void limpar(){
+		
+		//opção 1
+		//this.elementos = (T[])new Object[this.elementos.length];
+		
+		//opção 2
+		//this.tamanho = 0;
+		
+		//opção 3
+		for(int i=0; i<this.tamanho; i++){
+			this.elementos[i] = null;
+		}
+		this.tamanho = 0;
+	}
+	
+	//06
+	
 }
 
 //1 - Instanciar um construtor genérico não é permitido no java; há duas opções para contornar esse erro.

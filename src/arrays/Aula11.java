@@ -1,6 +1,6 @@
 //AULA 11: VETORES E ARRAYS: CONFIGURAR TIPO DINAMICAMENTE
 
-package src.aula11;
+package src.arrays;
 
 import src.vetor.Lista;
 

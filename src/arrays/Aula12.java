@@ -1,5 +1,5 @@
 //AULA 12: VETORES E ARRAYS: API JAVA: ARRAYLIST
-package src.aula12;
+package src.arrays;
 
 import java.util.ArrayList;
 
