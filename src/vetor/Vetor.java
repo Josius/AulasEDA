@@ -33,10 +33,12 @@ public class Vetor{
 		verifica(posicao);
 				
 //mover todos os elementos
+//		int i = 0;
 		for(int i=this.tamanho-1; i>=posicao; i--){
 			
 			this.elementos[i+1] = this.elementos[i];
 		}
+//		this.elementos[i+1] = elemento;
 		this.elementos[posicao] = elemento;
 		this.tamanho++;
 		
@@ -89,7 +91,7 @@ public class Vetor{
 			
 				this.elementos[i] = this.elementos[i+1];
 			}
-			tamanho--;
+			this.tamanho--;
 			System.out.println("Removido o elemento " + elemento);
 		}else{
 			System.out.println("Elemento " + elemento + " nao existe no vetor");

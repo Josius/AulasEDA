@@ -17,11 +17,11 @@ public class Aula7{
 		
 		System.out.println(vetor);
 		
-		vetor.adiciona(0, "A");
+		vetor.adiciona(1, "A");
 		
 		System.out.println(vetor);
 		
-		vetor.adiciona(3, "D");
+		vetor.adiciona(2, "D");
 		
 		System.out.println(vetor);
 	}
