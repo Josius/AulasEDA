@@ -14,7 +14,7 @@ public class Lista<T>{
 		this.tamanho = 0;
 	}
 
-//1-Com reflexion	
+//2-Com reflexion	
 	public Lista(int capacidade, Class<T> tipoClasse){
 		
 		this.elementos = (T[])Array.newInstance(tipoClasse, capacidade);
